@@ -41,7 +41,7 @@ body {
 }
 
 .grid-pad {
-	padding: 20px 0 0px 20px;
+	padding: 50px 0 0px 20px;
 }
 
 .grid-pad > [class*='col-']:last-of-type {
@@ -160,7 +160,7 @@ body {
 h1{
 	font-size: 50px;
 	color:  darken(@orange, 32%);
-	margin-top: 20%;
+	margin-top: 10%;
 }
 
 h3{
@@ -174,20 +174,24 @@ h3{
 
 
 table{
+	padding:100px; 
 	margin: 5%;
+	margin-top: 4cm;
 	border-collapse: collapse;
 
 }
 
 th{
 	font-size: 20px;
+
 }
 
 td, th{
-width: 35%;
-border-left : 1px solid darken(@orange, 17%);
-border-bottom: 1px solid darken(@orange, 17%);
-padding: 10px;
+	width: 35%;
+	border-left : 1px solid darken(@orange, 17%);
+	border-bottom: 1px solid darken(@orange, 17%);
+	padding: 10px;
+	text-align: center;
 }
 
 td:first-child, th:first-child{
@@ -197,13 +201,6 @@ td:first-child, th:first-child{
 
 tr:last-child td{border-bottom: 0 none;}
 
-a#invit{
-	padding: 10px;
-	font-size: 20px;
-	background: darken(@orange, 17%);
-	color: white;
-	text-decoration: none;
-}
 
 #pricing{
 	font-size: 18px;
@@ -223,36 +220,7 @@ h3 {
 
 
 
-header {
-  background-color: #2B2B2B;
-  height: 45px;
-  width: 100%;
-  opacity: .9;
-  margin-bottom: 10px;
-}
 
-.menu {
-  float: right;
-  margin-top: 8px;
-}
- 
-.menu li {
-  display: inline;
-}
- 
-.menu li + li {
-  margin-left: 35px;
-}
- 
-.menu li a {
-  color: white;
-  text-decoration: none;
-}
-
-.container {
-  width: 940px;
-  margin: 0 auto;
-}
 
 
 
@@ -267,19 +235,87 @@ header {
 }
 
 .footer-bottom-links a {
-	display: block;
+	display: inline-block;
 	margin: 5px;
 	padding: 5px 0;
 	text-decoration: none;
 	width: 200px;
-	float: left;
 	text-align: center;
 	color: #777;
 }
 
-.footer div a {
-	font-size: 14px;
-	color: #4b4d53;
-	line-height: 15px;
-	text-align: center;
+
+header {
+	background-color: #2B2B2B;
+	height: 45px;
+	width: 100%;
+	padding: 5px 20px;
+	opacity: .95;
+	margin-bottom: 10px;
+	position: fixed;
 }
+
+.header-links a {
+	display: block;
+	float:right;
+	margin: 5px;
+	padding: 5px 0;
+	text-decoration: none;
+	width: 120px;
+	text-align: center;
+	color: #777;
+}
+
+
+
+
+.myButton {
+    
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+    box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+    
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fbb450), color-stop(1, #f89306));
+    background:-moz-linear-gradient(top, #fbb450 5%, #f89306 100%);
+    background:-webkit-linear-gradient(top, #fbb450 5%, #f89306 100%);
+    background:-o-linear-gradient(top, #fbb450 5%, #f89306 100%);
+    background:-ms-linear-gradient(top, #fbb450 5%, #f89306 100%);
+    background:linear-gradient(to bottom, #fbb450 5%, #f89306 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb450', endColorstr='#f89306',GradientType=0);
+    
+    background-color:#fbb450;
+    
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    
+    border:1px solid #c97e1c;
+    
+    display:inline-block;
+    color:#ffffff;
+    font-family:Trebuchet MS;
+    font-size:17px;
+    font-weight:bold;
+    padding:6px 11px;
+    text-decoration:none;
+    
+    text-shadow:0px 1px 0px #8f7f24;
+    
+}
+.myButton:hover {
+    
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f89306), color-stop(1, #fbb450));
+    background:-moz-linear-gradient(top, #f89306 5%, #fbb450 100%);
+    background:-webkit-linear-gradient(top, #f89306 5%, #fbb450 100%);
+    background:-o-linear-gradient(top, #f89306 5%, #fbb450 100%);
+    background:-ms-linear-gradient(top, #f89306 5%, #fbb450 100%);
+    background:linear-gradient(to bottom, #f89306 5%, #fbb450 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f89306', endColorstr='#fbb450',GradientType=0);
+    
+    background-color:#f89306;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
