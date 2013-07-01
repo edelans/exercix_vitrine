@@ -18,7 +18,7 @@ body {
 
 [class*='col-'] {
 	float: left;
-	padding-right: 20px;
+	padding-right: 40px;
 }
 
 [class*='col-']:last-of-type {
@@ -31,6 +31,7 @@ body {
 	min-width: 755px;
 	margin: 0 auto;
 	overflow: hidden;
+	text-align:justify;
 }
 
 .grid:after {
@@ -81,6 +82,7 @@ body {
 		margin-right: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
+		text-align:justify;
 	}	
 	[class*='col-'] {
 		width: auto;
@@ -215,4 +217,69 @@ a#invit{
 
 h3 {
   text-align: center;
+}
+
+
+
+
+
+header {
+  background-color: #2B2B2B;
+  height: 45px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+
+.menu {
+  float: right;
+  margin-top: 8px;
+}
+ 
+.menu li {
+  display: inline;
+}
+ 
+.menu li + li {
+  margin-left: 35px;
+}
+ 
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+
+.footer {
+	width: 100%;
+	min-height: 100px;
+	text-align: center;
+	padding: 30px 0;
+	margin-top: 70px;
+	border-top: 1px solid #e5e5e5;
+	background-color: #2B2B2B;
+}
+
+.footer-bottom-links a {
+	display: block;
+	margin: 5px;
+	padding: 5px 0;
+	text-decoration: none;
+	width: 200px;
+	float: left;
+	text-align: center;
+	color: #777;
+}
+
+.footer div a {
+	font-size: 14px;
+	color: #4b4d53;
+	line-height: 15px;
+	text-align: center;
 }
