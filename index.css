@@ -47,5 +47,5 @@ header{background-color:#2B2B2B;height:45px;width:100%;padding:5px 20px;opacity:
 .myButton:hover{background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f89306), color-stop(1, #fbb450));background:-moz-linear-gradient(top, #f89306 5%, #fbb450 100%);background:-webkit-linear-gradient(top, #f89306 5%, #fbb450 100%);background:-o-linear-gradient(top, #f89306 5%, #fbb450 100%);background:-ms-linear-gradient(top, #f89306 5%, #fbb450 100%);background:linear-gradient(to bottom, #f89306 5%, #fbb450 100%);filter:progid:dximagetransform.microsoft.gradient(startColorstr='#f89306', endColorstr='#fbb450', GradientType=0);background-color:#f89306;}
 .myButton:active{position:relative;top:1px;}
 .premium-options-holder{padding:20px 0;text-align:center;vertical-align:top;width:100%;}
-.premium-option{background-color:#FFF;border:1px solid #b6b7b8;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;margin:30px 15px 0;padding:20px 0;position:relative;width:230px;vertical-align:top;}
-ul{list-style:none;}
+.premium-option{background-color:#FFF;border:1px solid #b6b7b8;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;display:inline-block;margin:30px 15px 0;padding:20px 0;position:relative;width:40%;vertical-align:top;}
+.premium-option h1{font-size:180%;font-weight:bold;}
