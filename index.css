@@ -262,7 +262,6 @@ h3 {
 }
 #vs div.grid table tr:nth-child(2),
 #vs div.grid table tr:nth-child(3),
-#vs div.grid table tr:nth-child(6),
 #vs div.grid table tr:nth-child(7) {
   font-size: 30px;
 }
@@ -366,6 +365,7 @@ h3 {
   }
   #vs table td:nth-child(2) {
     font-size: 25px !important;
+    width: 20%;
   }
   #vs table td:nth-child(2) i {
     font-size: 50px !important;
