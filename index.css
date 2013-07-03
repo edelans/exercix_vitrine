@@ -370,7 +370,17 @@ h3 {
   #vs table td:nth-child(2) i {
     font-size: 50px !important;
   }
+  #invit {
+    padding-top: 0;
+  }
+  #invit div div:first-child {
+    height: 0px;
+    margin: 0;
+  }
   h2 {
     margin-left: 5px;
+  }
+  #github {
+    position: absolute !important;
   }
 }
