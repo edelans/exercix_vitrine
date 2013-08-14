@@ -1,0 +1,1 @@
+- tuner la page pour google analytics, notamment avec http://robflaherty.github.io/jquery-scrolldepth/
