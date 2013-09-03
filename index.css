@@ -1,386 +1,48 @@
-/*
-  Simple Grid
-  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
-  Project Page - http://thisisdallas.github.com/Simple-Grid/
-  Author - Dallas Bass
-  Site - dallasbass.com
-*/
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body {
-  margin: 0px;
-}
-[class*='col-'] {
-  float: left;
-  padding-right: 20px;
-}
-[class*='col-']:last-of-type {
-  padding-right: 0px;
-}
-.grid {
-  width: 100%;
-  max-width: 1140px;
-  min-width: 755px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.grid-pad {
-  padding: 20px 0 0px 20px;
-}
-.grid-pad > [class*='col-']:last-of-type {
-  padding-right: 20px;
-}
-.push-right {
-  float: right;
-}
-/* Content Columns */
-.col-1-1 {
-  width: 100%;
-}
-.col-2-3,
-.col-8-12 {
-  width: 66.66%;
-}
-.col-1-2,
-.col-6-12 {
-  width: 50%;
-}
-.col-1-3,
-.col-4-12 {
-  width: 33.33%;
-}
-.col-1-4,
-.col-3-12 {
-  width: 25%;
-}
-.col-1-5 {
-  width: 20%;
-}
-.col-1-6,
-.col-2-12 {
-  width: 16.667%;
-}
-.col-1-7 {
-  width: 14.28%;
-}
-.col-1-8 {
-  width: 12.5%;
-}
-.col-1-9 {
-  width: 11.1%;
-}
-.col-1-10 {
-  width: 10%;
-}
-.col-1-11 {
-  width: 9.09%;
-}
-.col-1-12 {
-  width: 8.33%;
-}
-/* Layout Columns */
-.col-11-12 {
-  width: 91.66%;
-}
-.col-10-12 {
-  width: 83.333%;
-}
-.col-9-12 {
-  width: 75%;
-}
-.col-5-12 {
-  width: 41.66%;
-}
-.col-7-12 {
-  width: 58.33%;
-}
-@media handheld, only screen and (max-width: 767px) {
-  .grid {
-    width: 100% !important;
-    min-width: 0;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  [class*='col-'] {
-    width: auto !important;
-    float: none;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-/* ExerciX ShowCase CSS CC-BY-NC-SA, 2013 */
-/*///////////////////////////////////////////////  Fonts  //////////////////////////////////////////////*/
-@font-face {
-  font-family: 'LM';
-  src: url('fonts/lmroman10-regular-webfont.eot');
-  src: url('fonts/lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/lmroman10-regular-webfont.woff') format('woff'), url('fonts/lmroman10-regular-webfont.ttf') format('truetype'), url('fonts/lmroman10-regular-webfont.svg#lm_roman_10regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'LMC';
-  src: url('fonts/lmromancaps10-regular-webfont.eot');
-  src: url('fonts/lmromancaps10-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/lmromancaps10-regular-webfont.woff') format('woff'), url('fonts/lmromancaps10-regular-webfont.ttf') format('truetype'), url('fonts/lmromancaps10-regular-webfont.svg#lm_roman_caps_10regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'LMI';
-  src: url('fonts/lmroman10-italic-webfont.eot');
-  src: url('fonts/lmroman10-italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/lmroman10-italic-webfont.woff') format('woff'), url('fonts/lmroman10-italic-webfont.ttf') format('truetype'), url('fonts/lmroman10-italic-webfont.svg#lm_roman_10italic') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  font-family: 'LM';
-  font-weight: normal;
-  -webkit-box-sizing: border-box;
-  /* Safari/Chrome, other WebKit */
-
-  -moz-box-sizing: border-box;
-  /* Firefox, other Gecko */
-
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
-
-}
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////  #Navbar  /////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-#navbar {
-  background: #fff9f6;
-  padding: 20px 0px 20px 20% ;
-  position: fixed;
-  width: 100%;
-}
-#navbar a {
-  text-decoration: none;
-  font-size: 20px;
-  margin: 10px;
-  padding: 20px;
-  color: #f14400;
-}
-#navbar a:hover {
-  background: #ffeae2;
-}
-#navbar a:first-child {
-  font-size: 25px;
-}
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////  #Demo  ///////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-#demo {
-  background: #f14400;
-  padding-top: 90px;
-  padding-bottom: 30px;
-  color: white;
-  width: 100%;
-  font-size: 24px;
-}
-#demo .col-1-2:nth-child(2) {
-  padding-top: 60px;
-}
-#demo h1 {
-  font-size: 50px;
-}
-#demo #video {
-  background: white;
-  margin-left: 30px;
-  display: inline-block;
-  border: 2px solid white;
-  text-align: center;
-  border-radius: 13px;
-  padding: 11px;
-  padding-bottom: 8px;
-}
-#demo #video i {
-  border: solid 2px;
-  border-radius: 30px;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  color: #f14400;
-}
-#demo #video iframe {
-  margin-bottom: 4px;
-}
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////  #Features  ///////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-#features {
-  font-size: 17px;
-  padding: 50px 30px;
-}
-h2 {
-  margin-top: 0;
-  font-size: 45px;
-  margin-left: 100px;
-  margin-bottom: -20px;
-}
-h3 {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 2px;
-}
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////  #Features  ///////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-#vs {
-  background: #ffe3d8;
-  padding: 50px 30px;
-  color: #f14400;
-}
-#vs div.grid {
-  padding: 50px;
-}
-#vs div.grid table {
-  border-collapse: collapse;
-  font-size: 20px;
-}
-#vs div.grid table th {
-  width: 33%;
-  border-bottom: solid 1px;
-}
-#vs div.grid table tr:first-child {
-  font-size: 40px;
-}
-#vs div.grid table tr:nth-child(2),
-#vs div.grid table tr:nth-child(3),
-#vs div.grid table tr:nth-child(7) {
-  font-size: 30px;
-}
-#vs div.grid table td {
-  border-bottom: 1px solid;
-  padding-bottom: 20px;
-}
-#vs div.grid table td:first-child {
-  text-align: right;
-}
-#vs div.grid table td:nth-child(2) {
-  text-align: center;
-  font-size: 30px;
-}
-#vs div.grid table td i {
-  margin-top: 30px;
-  display: block;
-  font-size: 70px;
-}
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////  #Invit  ///////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-#invit {
-  background: #8b2700;
-  color: white;
-  font-size: 20px;
-}
-#invit h3 {
-  font-size: 40px;
-}
-#invit h4 {
-  font-size: 30px;
-  margin: 5px 0;
-}
-#invit div div div {
-  text-align: center;
-}
-#invit div div div a {
-  font-size: 30px;
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  padding: 20px;
-  background: #d83d00;
-  margin: 10px;
-}
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////  Mobile  //////////////////////////////////////////////////////////////*/
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media (min-width: 768px) and (max-width: 960px) {
-  #navbar {
-    padding: 20px;
-  }
-  #demo #video {
-    margin-left: 10px;
-  }
-  #vs div.grid {
-    padding: 20px;
-  }
-}
-@media (max-width: 767px) {
-  #navbar {
-    padding: 0px;
-    position: relative;
-  }
-  #navbar a {
-    display: block;
-  }
-  #navbar a:first-child {
-    font-size: 40px;
-  }
-  #demo #video {
-    margin-left: 10px;
-  }
-  #vs {
-    padding: 10px;
-  }
-  #vs div.grid {
-    padding: 5px;
-  }
-  #vs img[src="icon.svg"] {
-    width: 80px;
-  }
-  #vs img[src="icon-book.svg"] {
-    width: 100px;
-  }
-  #vs img[src="icon-weight.svg"] {
-    width: 80px;
-  }
-  #vs table tr {
-    font-size: 17px;
-  }
-  #vs table tr:first-child {
-    font-size: 20px !important;
-  }
-  #vs table tr:nth-child(2),
-  #vs table tr:nth-child(3),
-  #vs table tr:nth-child(6),
-  #vs table tr:nth-child(7) {
-    font-size: 20px !important;
-  }
-  #vs table td:nth-child(2) {
-    font-size: 25px !important;
-    width: 20%;
-  }
-  #vs table td:nth-child(2) i {
-    font-size: 50px !important;
-  }
-  #invit {
-    padding-top: 0;
-  }
-  #invit div div:first-child {
-    height: 0px;
-    margin: 0;
-  }
-  h2 {
-    margin-left: 5px;
-  }
-  #github {
-    position: absolute !important;
-  }
-}
+*,*:after,*:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+body{margin:0px;}
+[class*='col-']{float:left;padding-right:20px;}
+[class*='col-']:last-of-type{padding-right:0px;}
+.grid{width:100%;max-width:1140px;min-width:755px;margin:0 auto;overflow:hidden;}
+.grid:after{content:"";display:table;clear:both;}
+.grid-pad{padding:20px 0 0px 20px;}
+.grid-pad>[class*='col-']:last-of-type{padding-right:20px;}
+.push-right{float:right;}
+.col-1-1{width:100%;}
+.col-2-3,.col-8-12{width:66.66%;}
+.col-1-2,.col-6-12{width:50%;}
+.col-1-3,.col-4-12{width:33.33%;}
+.col-1-4,.col-3-12{width:25%;}
+.col-1-5{width:20%;}
+.col-1-6,.col-2-12{width:16.667%;}
+.col-1-7{width:14.28%;}
+.col-1-8{width:12.5%;}
+.col-1-9{width:11.1%;}
+.col-1-10{width:10%;}
+.col-1-11{width:9.09%;}
+.col-1-12{width:8.33%;}
+.col-11-12{width:91.66%;}
+.col-10-12{width:83.333%;}
+.col-9-12{width:75%;}
+.col-5-12{width:41.66%;}
+.col-7-12{width:58.33%;}
+@media handheld,only screen and (max-width:767px){.grid{width:100% !important;min-width:0;margin-left:0px;margin-right:0px;padding-left:0px;padding-right:0px;} [class*='col-']{width:auto !important;float:none;margin-left:0px;margin-right:0px;margin-top:10px;margin-bottom:10px;padding-left:20px;padding-right:20px;}}@font-face{font-family:'LM';src:url('fonts/lmroman10-regular-webfont.eot');src:url('fonts/lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/lmroman10-regular-webfont.woff') format('woff'),url('fonts/lmroman10-regular-webfont.ttf') format('truetype'),url('fonts/lmroman10-regular-webfont.svg#lm_roman_10regular') format('svg');font-weight:normal;font-style:normal;}@font-face{font-family:'LMC';src:url('fonts/lmromancaps10-regular-webfont.eot');src:url('fonts/lmromancaps10-regular-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/lmromancaps10-regular-webfont.woff') format('woff'),url('fonts/lmromancaps10-regular-webfont.ttf') format('truetype'),url('fonts/lmromancaps10-regular-webfont.svg#lm_roman_caps_10regular') format('svg');font-weight:normal;font-style:normal;}@font-face{font-family:'LMI';src:url('fonts/lmroman10-italic-webfont.eot');src:url('fonts/lmroman10-italic-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/lmroman10-italic-webfont.woff') format('woff'),url('fonts/lmroman10-italic-webfont.ttf') format('truetype'),url('fonts/lmroman10-italic-webfont.svg#lm_roman_10italic') format('svg');font-weight:normal;font-style:normal;}*{font-family:'LM';font-weight:normal;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+#navbar{background:#fff9f6;padding:20px 0px 20px 20% ;position:fixed;width:100%;}#navbar a{text-decoration:none;font-size:20px;margin:10px;padding:20px;color:#f14400;}#navbar a:hover{background:#ffeae2;}
+#navbar a:first-child{font-size:25px;}
+#demo{background:#f14400;padding-top:90px;padding-bottom:30px;color:white;width:100%;font-size:24px;}#demo .col-1-2:nth-child(2){padding-top:60px;}
+#demo h1{font-size:50px;}
+#demo #video{background:white;margin-left:30px;display:inline-block;border:2px solid white;text-align:center;border-radius:13px;padding:11px;padding-bottom:8px;}#demo #video i{border:solid 2px;border-radius:30px;width:40px;height:40px;display:inline-block;color:#f14400;}
+#demo #video iframe{margin-bottom:4px;}
+#features{font-size:17px;padding:50px 30px;}
+h2{margin-top:0;font-size:45px;margin-left:100px;margin-bottom:-20px;}
+h3{font-size:30px;text-align:center;margin-bottom:2px;}
+#vs{background:#ffe3d8;padding:50px 30px;color:#f14400;}#vs div.grid{padding:50px;}#vs div.grid table{border-collapse:collapse;font-size:20px;}#vs div.grid table th{width:33%;border-bottom:solid 1px;}
+#vs div.grid table tr:first-child{font-size:40px;}
+#vs div.grid table tr:nth-child(2),#vs div.grid table tr:nth-child(3),#vs div.grid table tr:nth-child(7){font-size:30px;}
+#vs div.grid table td{border-bottom:1px solid;padding-bottom:20px;}#vs div.grid table td:first-child{text-align:right;}
+#vs div.grid table td:nth-child(2){text-align:center;font-size:30px;}
+#vs div.grid table td i{margin-top:30px;display:block;font-size:70px;}
+#invit{background:#8b2700;color:white;font-size:20px;text-align:center;padding-bottom:3cm;}#invit h3{font-size:40px;}
+#invit h4{font-size:30px;margin:5px 0;}
+#invit div div div{text-align:center;}#invit div div div a{font-size:30px;text-decoration:none;color:white;display:inline-block;padding:20px;background:#d83d00;margin:10px;}
+#footer{background:#fff9f6;padding:20px 0px 20px 20% ;width:100%;}#footer a{text-decoration:none;font-size:20px;margin:10px;padding:20px;color:#f14400;}#footer a:hover{background:#ffeae2;}
+@media (min-width:768px) and (max-width:960px){#navbar,#footer{padding:20px;} #demo #video{margin-left:10px;} #vs div.grid{padding:20px;}}@media (max-width:767px){{}#navbar,#footer{padding:0px;position:relative;}#navbar a,#footer a{display:block;}#navbar a:first-child,#footer a:first-child{font-size:40px;} #footer a{font-size:20px !important;} #demo #video{margin-left:10px;} #vs{padding:10px;}#vs div.grid{padding:5px;} #vs img[src="icon.svg"]{width:80px;} #vs img[src="icon-book.svg"]{width:100px;} #vs img[src="icon-weight.svg"]{width:80px;} #vs table tr{font-size:17px;}#vs table tr:first-child{font-size:20px !important;} #vs table tr:nth-child(2),#vs table tr:nth-child(3),#vs table tr:nth-child(6),#vs table tr:nth-child(7){font-size:20px !important;} #vs table td:nth-child(2){font-size:25px !important;width:20%;}#vs table td:nth-child(2) i{font-size:50px !important;} #invit{padding-top:0;}#invit div div:first-child{height:0px;margin:0;} h2{margin-left:5px;font-size:35px;} h3{font-size:28px;}}@media (max-width:767px) and (max-width:390px){#demo div div:first-child{padding:0;margin:0;}#demo div div:first-child #video{margin:0px;padding:0px;border:0px none;} #vs div{padding:0;}#vs div table tr{font-size:14px;}#vs div table tr:first-child{font-size:14px !important;} #vs div table tr:nth-child(2),#vs div table tr:nth-child(3),#vs div table tr:nth-child(6),#vs div table tr:nth-child(7){font-size:17px !important;} #vs div table td:nth-child(2){font-size:20px !important;padding:0px 5px;}}
