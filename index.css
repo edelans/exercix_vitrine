@@ -32,6 +32,7 @@ body{margin:0px;}
 #demo h1{font-size:50px;}
 #demo #video{background:white;margin-left:30px;display:inline-block;border:2px solid white;text-align:center;border-radius:13px;padding:11px;padding-bottom:8px;}#demo #video i{border:solid 2px;border-radius:30px;width:40px;height:40px;display:inline-block;color:#f14400;}
 #demo #video iframe{margin-bottom:4px;}
+#dl-iOS,#dl-android{display:inline-block;}
 #features{font-size:17px;padding:50px 30px;}
 h2{margin-top:0;font-size:45px;margin-left:100px;margin-bottom:-20px;}
 h3{font-size:30px;text-align:center;margin-bottom:2px;}

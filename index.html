@@ -87,7 +87,16 @@ mixpanel.init("26b980aaac330eddd256b3c554e4b8be");</script><!-- end Mixpanel -->
 		<div class="col-1-2">
 				<h1>ExerciX</h1>
 				ExerciX est une application web smartphone et tablette qui propose aux étudiants de prépas scientifiques MP, PC et PSI une large banque d'exercices de mathématiques avec des corrigés haut de gamme pour préparer leurs concours avec sérénité et flexibilité.
-				<!--<div><a>Demo Mobile</a><a>Demo tablette</a></div>-->
+				<br><br> 
+
+			<a id="dl-android"  href="https://play.google.com/store/apps/details?id=net.exercix&hl=en">
+		 		<img alt="logo Google play" src="logo-google-play.png" width="150" height="52"><br>
+		 	</a>
+
+		 	<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=697784747&mt=8" id="dl-iOS" >
+		 		<img alt="logo App store" src="logo-app-store.png" width="150" height="52">
+		 	</a>
+
 		</div>
 	</div>
 </div>
@@ -157,7 +166,7 @@ mixpanel.init("26b980aaac330eddd256b3c554e4b8be");</script><!-- end Mixpanel -->
 				</tr>
 
 				<tr>
-					<td>Des corrigés figés dans le temps, avec coquilles et ambiguités</td>
+					<td>Des corrigés figés dans le temps, avec coquilles et ambiguïtés</td>
 					<td><i class="icon-code-fork"></i>Evolution</td>
 					<td>Amélioration continue grace aux retours des utilisateurs</td>
 				</tr>
@@ -179,7 +188,7 @@ mixpanel.init("26b980aaac330eddd256b3c554e4b8be");</script><!-- end Mixpanel -->
 			<br>
 		</div>
 		<div class="col-1-2">
-			<h3>Pack révision d'oraux</h3>
+			<h3>Pack révisions d'oraux</h3>
 			<h4>Offre de lancement</h4><br>
 			 Les 50 exercices de math incontournables pour réviser ses oraux de concours <br><br>
 			 Entièrement gratuit<br><br>
@@ -193,20 +202,17 @@ mixpanel.init("26b980aaac330eddd256b3c554e4b8be");</script><!-- end Mixpanel -->
     });
 </script>
 
-		 	<a id="dl-iOS" onclick="inform()">
+		 	<a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=697784747&mt=8" id="dl-iOS" >
 		 		<img alt="logo App store" src="logo-app-store.png" width="150" height="52">
 		 	</a>
 
 
 
 
-<script>
-function inform(){
-alert("L'appli iOS n'est pas encore disponible, mais elle le sera dans quelques jours !");
-mixpanel.track('tried download iOS');
-/* mixpanel.track_links("#dl-iOS", "download iOS", {referrer: document.referrer}); */
-console.log('tried download iOS');
-}
+<script type="text/javascript">
+    mixpanel.track_links("#dl-iOS", "download iOS", {
+        referrer: document.referrer
+    });
 </script>
 
 
